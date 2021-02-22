@@ -1,0 +1,163 @@
+{
+    "variables": [],
+    "isDebbugerEnable": "false",
+    "isValidSequence": true,
+    "breakPointEnable": "true",
+    "modelerModel": {
+        "process": {
+            "sequenceFlow": [
+                {
+                    "targetRef": "OpenExcelTask_vg0pn7",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_doq4y6",
+                    "sourceRef": "StartEvent_13qd0d9",
+                    "type": "rpa:sequenceFlow"
+                },
+                {
+                    "targetRef": "EndEvent_k64taw",
+                    "businessProp": {},
+                    "name": "",
+                    "tasktCommandName": "sequenceFlow",
+                    "id": "SequenceFlow_hpjck7",
+                    "sourceRef": "OpenExcelTask_vg0pn7",
+                    "type": "rpa:sequenceFlow"
+                }
+            ],
+            "endEvent": {
+                "incoming": "SequenceFlow_hpjck7",
+                "businessProp": {},
+                "name": "End",
+                "id": "EndEvent_k64taw",
+                "type": "rpa:endEvent"
+            },
+            "startEvent": {
+                "outgoing": "SequenceFlow_doq4y6",
+                "businessProp": {"GlobalVariables": []},
+                "name": "Start",
+                "id": "StartEvent_13qd0d9",
+                "type": "rpa:startEvent"
+            },
+            "id": "Process_1",
+            "openExcelTask": {
+                "nodeName": "OpenExcelTask",
+                "outgoing": "SequenceFlow_hpjck7",
+                "incoming": "SequenceFlow_doq4y6",
+                "businessProp": {
+                    "excelInstanceName": "a1",
+                    "excelFilePath": "C:\\workspace\\ImportantData\\t1.xlsx"
+                },
+                "name": "Open Workbook",
+                "tasktCommandName": "ExcelOpenWorkbookCommand",
+                "id": "OpenExcelTask_vg0pn7",
+                "type": "rpa:openExcelTask",
+                "lineNumber": 1,
+                "events": []
+            }
+        },
+        "BPMNDiagram": {
+            "bpmnElement": "Process_1",
+            "BPMNPlane": {
+                "BPMNShape": [
+                    {
+                        "bpmnElement": "EndEvent_k64taw",
+                        "Bounds": {
+                            "cx": 585,
+                            "cy": 314.9999885559082,
+                            "x": 533,
+                            "width": 104,
+                            "y": 294.0199890136719,
+                            "height": 41.959999084472656
+                        },
+                        "id": "EndEvent_k64taw_ve"
+                    },
+                    {
+                        "bpmnElement": "StartEvent_13qd0d9",
+                        "Bounds": {
+                            "cx": 560,
+                            "cy": 65,
+                            "x": 508,
+                            "width": 104,
+                            "y": 44.02000045776367,
+                            "height": 41.959999084472656
+                        },
+                        "id": "StartEvent_13qd0d9_ve"
+                    },
+                    {
+                        "bpmnElement": "OpenExcelTask_vg0pn7",
+                        "Bounds": {
+                            "cx": 559.9999771118164,
+                            "cy": 201.0000057220459,
+                            "x": 451.91998291015625,
+                            "width": 216.1599884033203,
+                            "y": 181.02000427246094,
+                            "height": 39.96000289916992
+                        },
+                        "id": "OpenExcelTask_vg0pn7_ve"
+                    }
+                ],
+                "BPMNEdge": [
+                    {
+                        "waypoint": [
+                            {
+                                "x": "560",
+                                "y": "85.98000045776368"
+                            },
+                            {
+                                "x": "559.9999829101563",
+                                "y": "181.02000427246094"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_doq4y6",
+                        "id": "SequenceFlow_doq4y6_ve"
+                    },
+                    {
+                        "waypoint": [
+                            {
+                                "x": "559.9999829101563",
+                                "y": "220.98000427246095"
+                            },
+                            {
+                                "x": "559.9999829101563",
+                                "y": "257.4999966430664"
+                            },
+                            {
+                                "x": "585",
+                                "y": "257.4999966430664"
+                            },
+                            {
+                                "x": "585",
+                                "y": "294.0199890136719"
+                            }
+                        ],
+                        "bpmnElement": "SequenceFlow_hpjck7",
+                        "id": "SequenceFlow_hpjck7_ve"
+                    }
+                ]
+            },
+            "id": "Process_1_ve"
+        },
+        "variables": [],
+        "collaboration": {}
+    },
+    "description": "",
+    "uiModelerVersion": "7.0.5",
+    "isValidProcess": true,
+    "responseMessage": "",
+    "tasktActions": [{
+        "nodeName": "OpenExcelTask",
+        "outgoing": "SequenceFlow_hpjck7",
+        "incoming": "SequenceFlow_doq4y6",
+        "businessProp": {
+            "excelInstanceName": "a1",
+            "excelFilePath": "C:\\workspace\\ImportantData\\t1.xlsx"
+        },
+        "name": "Open Workbook",
+        "tasktCommandName": "ExcelOpenWorkbookCommand",
+        "id": "OpenExcelTask_vg0pn7",
+        "type": "rpa:openExcelTask",
+        "lineNumber": 1,
+        "events": []
+    }]
+}

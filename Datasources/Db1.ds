@@ -1,0 +1,27 @@
+{"content": {
+    "datasourceType": 0,
+    "datasourceProperties": {
+        "connectionMeta": {
+            "instance": "",
+            "port": "5432",
+            "host": "localhost",
+            "driverName": "Thin",
+            "connectionType": false,
+            "sid": ""
+        },
+        "password": "p@ssW0rd",
+        "databaseName": "MadhuDB",
+        "jdbcString": "jdbc:postgresql://localhost:5432/MadhuDB",
+        "vendor": "PostgreSQL",
+        "poolSize": 3,
+        "isEncrypted": true,
+        "isJdbcUrl": false,
+        "datasourceId": "4f3e5d51-d2f0-45da-afde-80db2f270a07",
+        "active": 1,
+        "id": "59e832d1-7446-497a-b375-18c467508888",
+        "username": "postgres"
+    },
+    "name": "Db1",
+    "id": "4f3e5d51-d2f0-45da-afde-80db2f270a07",
+    "applicationId": "8de3ea56-a221-4600-959c-3280120dafc4"
+}}

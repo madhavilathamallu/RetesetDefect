@@ -1,0 +1,11 @@
+{"content": {
+    "datasourceType": 3,
+    "datasourceProperties": {
+        "baseUrl": "/comptest",
+        "datasourceId": "69746fbb-60d7-4512-b6ed-db47fff76a9c",
+        "id": "c1b04dd2-f37e-411b-a96f-82b8fa91edf8"
+    },
+    "name": "compTest",
+    "id": "69746fbb-60d7-4512-b6ed-db47fff76a9c",
+    "applicationId": "8de3ea56-a221-4600-959c-3280120dafc4"
+}}
